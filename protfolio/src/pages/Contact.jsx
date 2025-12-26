@@ -67,7 +67,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {[
-            { icon: FaEnvelope, label: 'Email', value: 'tiwanamanpreet536@gmail.com', href: 'mailto:tiwanamanpreet536@gmail.com' },
+            { icon: FaEnvelope, label: 'Email', value: 'tiwanamanpreet536@gmail.com', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=tiwanamanpreet536@gmail.com&su=Hello&body=' },
             { icon: FaGithub, label: 'GitHub', value: 'github.com/yourprofile', href: 'https://github.com' },
             { icon: FaLinkedin, label: 'LinkedIn', value: 'linkedin.com/in/yourprofile', href: 'https://linkedin.com' },
           ].map((contact, idx) => (
@@ -238,7 +238,9 @@ const Contact = () => {
             Whether you have an opportunity, question, or just want to chat, I'd love to hear from you.
           </p>
           <a
-            href="mailto:tiwanamanpreet536@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=tiwanamanpreet536@gmail.com&su=Hello&body=I%20came%20from%20your%20portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-white text-purple-600 font-bold px-8 py-3 rounded-lg hover:bg-gray-100 transition"
           >
             Start a Conversation
