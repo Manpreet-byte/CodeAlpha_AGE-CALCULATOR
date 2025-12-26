@@ -152,8 +152,12 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="w-full h-80 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg shadow-lg flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-300">
-                    {['🎯', '💼', '🛍️'][idx] || '🚀'}
+                  <div className="w-full h-80 rounded-lg shadow-lg overflow-hidden group-hover:scale-105 transition-transform duration-300">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
