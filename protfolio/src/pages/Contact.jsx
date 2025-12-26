@@ -34,9 +34,11 @@ const Contact = () => {
     setError('');
 
     try {
-      // Open default mail client with pre-filled data
-      const mailtoLink = `mailto:tiwanamanpreet536@gmail.com?subject=${encodeURIComponent(`[${formData.subject}] From ${formData.name} (${formData.email})`)}&body=${encodeURIComponent(`Message from: ${formData.name}\nEmail: ${formData.email}\n\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}`)}`;
-      
+      // Open default mail client with sender name/email prefilled for easy reply
+      const subject = `Message from ${formData.name}`;
+      const body = `From: ${formData.name} <${formData.email}>\n\nSubject: ${formData.subject}\n\n${formData.message}`;
+      const mailtoLink = `mailto:tiwanamanpreet536@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
       window.location.href = mailtoLink;
 
       setSubmitted(true);
