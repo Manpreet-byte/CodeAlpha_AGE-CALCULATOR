@@ -15,7 +15,7 @@ const About = () => {
                   Hello! 👋
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I'm Manpreet Singh, a dedicated Full Stack MERN developer and BCA student at Eternal University, Baru Sahib. With a strong academic record (GPA 9.34) and a passion for technology, I specialize in building modern, scalable web applications. My journey in web development is driven by curiosity and a commitment to creating solutions that make a real difference.
+                  I'm Manpreet Kaur, a dedicated Full Stack MERN developer and BCA student at Eternal University, Baru Sahib. With a strong academic record (GPA 9.34) and a passion for technology, I specialize in building modern, scalable web applications. My journey in web development is driven by curiosity and a commitment to creating solutions that make a real difference.
                 </p>
               </div>
 

@@ -9,7 +9,7 @@ const Home = () => {
           <div className="animate-slideUp">
             <p className="text-purple-600 dark:text-purple-400 font-semibold mb-2 text-lg">Hello, I'm</p>
             <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text">
-              Manpreet Singh
+              Manpreet Kaur
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-4 font-light">
               Full Stack MERN Developer
