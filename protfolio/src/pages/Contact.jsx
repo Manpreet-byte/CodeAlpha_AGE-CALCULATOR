@@ -34,12 +34,12 @@ const Contact = () => {
     setError('');
 
     try {
-      // Open default mail client with sender name/email prefilled for easy reply
+      // Open Gmail compose with sender name/email prefilled for easy reply
       const subject = `Message from ${formData.name}`;
       const body = `From: ${formData.name} <${formData.email}>\n\nSubject: ${formData.subject}\n\n${formData.message}`;
-      const mailtoLink = `mailto:tiwanamanpreet536@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=tiwanamanpreet536@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-      window.location.href = mailtoLink;
+      window.open(gmailLink, '_blank');
 
       setSubmitted(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
